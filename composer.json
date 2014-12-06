@@ -1,7 +1,7 @@
 {
     "name": "mr-audio-guy/oci-classes",
     "description": "",
-    "license": "MS-PL",
+    "license": "MIT",
     "keywords": [
         "database",
         "oracle",
