@@ -2,6 +2,7 @@
     "name": "mr-audio-guy/oci-classes",
     "description": "",
     "license": "MIT",
+	"version": "0.0.0",
     "keywords": [
         "database",
         "oracle",
@@ -16,7 +17,7 @@
     "require": {
         "php": ">=5.5.0",
         "illuminate/support": "4.2.*",
-        "mr-audio-guy/commons": "dev-master"
+        "mr-audio-guy/commons": "0.0.0"
     },
     "autoload": {
         "classmap": [
