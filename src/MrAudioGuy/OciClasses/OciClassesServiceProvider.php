@@ -18,7 +18,7 @@ class OciClassesServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('mr-audio-guy/oci-classes');
+		$this->package('mr-audio-guy/oci-classes', 'MrAudioGuy/OciClasses');
 	}
 
 	/**
