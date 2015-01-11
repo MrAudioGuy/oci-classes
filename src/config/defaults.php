@@ -1,5 +1,5 @@
 <?php
-	namespace Libraries\Database;
+	namespace MrAudioGuy\OciClasses;
 
 	return [
 		'paging'	=>	20,
