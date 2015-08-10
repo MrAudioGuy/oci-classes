@@ -1,11 +1,8 @@
 <?php
+	namespace MrAudioGuy\OciClasses;
 
-namespace Libraries\Database;
-
-use Lang;
-
-return [
-    'paging'        =>  20,
-    'connection'    =>  'oracle-report',
-	'schema'		=>	'USSD',
-];
+	return [
+		'paging'	=>	20,
+		'connection'	=>	'oracle-sid',
+		'schema'	=>	'DEV',
+	];
