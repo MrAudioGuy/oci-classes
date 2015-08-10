@@ -28,7 +28,21 @@ class OciClassesServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$loader = $this->app['config']->getLoader();
+
+		// Get environment name
+		$env = $this->app['config']->getEnvironment();
+
+		// Add package namespace with path set, override package if app config exists in the main app directory
+		if (file_exists(app_path() . '/config/packages/Mr-Audio-Guy/oci-classes')) {
+			$loader->addNamespace('oci-classes', app_path() . '/config/packages/Mr-Audio-Guy/oci-classes');
+		} else {
+			$loader->addNamespace('oci-classes', __DIR__ . '/../../config');
+		}
+
+		$config = $loader->load($env, 'config', 'oci-classes');
+
+		$this->app['config']->set('oci-classes::config', $config);
 	}
 
 	/**
